@@ -1,0 +1,102 @@
+execve("./pincracktest", ["./pincracktest", "356a192b7913b04c54574d18c28d46e6"...], 0xffffc1593d40 /* 33 vars */) = 0 <0.002125>
+brk(NULL)                               = 0xaaaaf54c9000 <0.000211>
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffa6981000 <0.000159>
+faccessat(AT_FDCWD, "/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000095>
+openat(AT_FDCWD, "./tls/aarch64/atomics/libpincrack.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000276>
+openat(AT_FDCWD, "./tls/aarch64/libpincrack.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000075>
+openat(AT_FDCWD, "./tls/atomics/libpincrack.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000234>
+openat(AT_FDCWD, "./tls/libpincrack.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000153>
+openat(AT_FDCWD, "./aarch64/atomics/libpincrack.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000160>
+openat(AT_FDCWD, "./aarch64/libpincrack.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000201>
+openat(AT_FDCWD, "./atomics/libpincrack.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000248>
+openat(AT_FDCWD, "./libpincrack.so", O_RDONLY|O_CLOEXEC) = 3 <0.000304>
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832 <0.000326>
+newfstatat(3, "", {st_mode=S_IFREG|0775, st_size=13000, ...}, AT_EMPTY_PATH) = 0 <0.000558>
+getcwd("/home/garmia/HW1_464", 128)     = 21 <0.000317>
+mmap(NULL, 139408, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffa6929000 <0.000160>
+mmap(0xffffa6930000, 73872, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffffa6930000 <0.000202>
+munmap(0xffffa6929000, 28672)           = 0 <0.000321>
+munmap(0xffffa6943000, 32912)           = 0 <0.000352>
+mprotect(0xffffa6931000, 65536, PROT_NONE) = 0 <0.000190>
+mmap(0xffffa6941000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0xffffa6941000 <0.000159>
+close(3)                                = 0 <0.000183>
+openat(AT_FDCWD, "./tls/aarch64/atomics/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000544>
+openat(AT_FDCWD, "./tls/aarch64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000113>
+openat(AT_FDCWD, "./tls/atomics/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000340>
+openat(AT_FDCWD, "./tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000184>
+openat(AT_FDCWD, "./aarch64/atomics/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000167>
+openat(AT_FDCWD, "./aarch64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000141>
+openat(AT_FDCWD, "./atomics/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000163>
+openat(AT_FDCWD, "./libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory) <0.000157>
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000387>
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=21975, ...}, AT_EMPTY_PATH) = 0 <0.000189>
+mmap(NULL, 21975, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffffa697b000 <0.000234>
+close(3)                                = 0 <0.000135>
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000107>
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\340u\2\0\0\0\0\0"..., 832) = 832 <0.000157>
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1641496, ...}, AT_EMPTY_PATH) = 0 <0.000115>
+mmap(NULL, 1810024, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffa6776000 <0.000202>
+mmap(0xffffa6780000, 1744488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffffa6780000 <0.000138>
+munmap(0xffffa6776000, 40960)           = 0 <0.000145>
+munmap(0xffffa692a000, 24168)           = 0 <0.000094>
+mprotect(0xffffa6909000, 61440, PROT_NONE) = 0 <0.000085>
+mmap(0xffffa6918000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x188000) = 0xffffa6918000 <0.000258>
+mmap(0xffffa691e000, 48744, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffffa691e000 <0.000120>
+close(3)                                = 0 <0.000103>
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffa6979000 <0.000074>
+set_tid_address(0xffffa69790f0)         = 3783 <0.000111>
+set_robust_list(0xffffa6979100, 24)     = 0 <0.000181>
+rseq(0xffffa69797c0, 0x20, 0, 0xd428bc00) = 0 <0.000232>
+mprotect(0xffffa6918000, 16384, PROT_READ) = 0 <0.000251>
+mprotect(0xffffa6941000, 4096, PROT_READ) = 0 <0.000282>
+mprotect(0xaaaadba00000, 4096, PROT_READ) = 0 <0.000160>
+mprotect(0xffffa6986000, 8192, PROT_READ) = 0 <0.000175>
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0 <0.000163>
+munmap(0xffffa697b000, 21975)           = 0 <0.000123>
+socket(AF_INET, SOCK_STREAM, IPPROTO_IP) = 3 <0.000164>
+getrandom("\x87\xa8\x4b\xd9\xa4\x06\xb7\xff", 8, GRND_NONBLOCK) = 8 <0.000145>
+brk(NULL)                               = 0xaaaaf54c9000 <0.000077>
+brk(0xaaaaf54ea000)                     = 0xaaaaf54ea000 <0.000067>
+newfstatat(AT_FDCWD, "/etc/resolv.conf", {st_mode=S_IFREG|0644, st_size=927, ...}, 0) = 0 <0.000179>
+openat(AT_FDCWD, "/etc/host.conf", O_RDONLY|O_CLOEXEC) = 4 <0.000164>
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=92, ...}, AT_EMPTY_PATH) = 0 <0.000041>
+read(4, "# The \"order\" line is only used "..., 4096) = 92 <0.000120>
+read(4, "", 4096)                       = 0 <0.000119>
+close(4)                                = 0 <0.000110>
+futex(0xffffa6924400, FUTEX_WAKE_PRIVATE, 2147483647) = 0 <0.000107>
+openat(AT_FDCWD, "/etc/resolv.conf", O_RDONLY|O_CLOEXEC) = 4 <0.000096>
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=927, ...}, AT_EMPTY_PATH) = 0 <0.000078>
+read(4, "# This is /run/systemd/resolve/s"..., 4096) = 927 <0.000124>
+read(4, "", 4096)                       = 0 <0.000150>
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=927, ...}, AT_EMPTY_PATH) = 0 <0.000101>
+close(4)                                = 0 <0.000127>
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4 <0.000106>
+connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory) <0.000181>
+close(4)                                = 0 <0.000129>
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4 <0.000094>
+connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory) <0.000218>
+close(4)                                = 0 <0.000141>
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0 <0.000148>
+newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0 <0.000085>
+openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 4 <0.000166>
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=510, ...}, AT_EMPTY_PATH) = 0 <0.000086>
+read(4, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 510 <0.000156>
+read(4, "", 4096)                       = 0 <0.000079>
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=510, ...}, AT_EMPTY_PATH) = 0 <0.000118>
+close(4)                                = 0 <0.000089>
+openat(AT_FDCWD, "/etc/hosts", O_RDONLY|O_CLOEXEC) = 4 <0.000124>
+newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=223, ...}, AT_EMPTY_PATH) = 0 <0.000116>
+lseek(4, 0, SEEK_SET)                   = 0 <0.000080>
+read(4, "127.0.0.1 localhost\n127.0.1.1 ub"..., 4096) = 223 <0.000075>
+read(4, "", 4096)                       = 0 <0.000137>
+close(4)                                = 0 <0.000129>
+connect(3, {sa_family=AF_INET, sin_port=htons(3005), sin_addr=inet_addr("127.0.0.1")}, 16) = 0 <0.000607>
+newfstatat(1, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x4), ...}, AT_EMPTY_PATH) = 0 <0.000153>
+write(1, "Connect returned 0\n", 19)    = 19 <0.000124>
+write(1, "Sending Hash: 356a192b7913b04c54"..., 55) = 55 <0.000094>
+sendto(3, "356a192b7913b04c54574d18c28d46e6"..., 250, 0, NULL, 0) = 250 <0.000139>
+recvfrom(3, "1\000000000000000000000000000000000"..., 250, 0, NULL, NULL) = 250 <0.000703>
+write(1, "bytes received 250\n", 19)    = 19 <0.000093>
+write(1, "PIN found: 1\n", 13)          = 13 <0.000147>
+exit_group(0)                           = ?
++++ exited with 0 +++
