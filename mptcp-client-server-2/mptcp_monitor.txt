@@ -1,0 +1,3 @@
+[       CREATED] token=3cf4a752 remid=0 locid=0 saddr4=10.229.78.103 daddr4=10.228.15.98 sport=2004 dport=48657
+[   ESTABLISHED] token=3cf4a752 remid=0 locid=0 saddr4=10.229.78.103 daddr4=10.228.15.98 sport=2004 dport=48657
+[        CLOSED] token=3cf4a752
